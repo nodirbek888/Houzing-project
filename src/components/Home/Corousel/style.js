@@ -32,12 +32,14 @@ margin-bottom: 24px;
     text-align: center;
     color: #ffffff;
     font-size: 44px;
+    user-select: none;
   }
   .text-title{
     text-align: center;
     color: #ffffff;
     font-weight: 400;
     font-size: 15px;
+    user-select: none;
   }
 `
 const Details = styled.div`

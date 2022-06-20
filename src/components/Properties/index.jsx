@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Filter from '../Filter'
 import Card from '../Card'
-import { Container,Result, Wrapper } from "./style";
+import { Container,Result, Wrapper ,CardWrapper,} from "./style";
 import { useQuery } from "react-query";
 
 const {REACT_APP_BASE_URL:url} =process.env
@@ -26,7 +26,9 @@ const Properties = () =>{
         {
           data.map((value)=>{
             return(
-              <Card key={value.id} info={value}/>
+              <CardWrapper>
+                <Card key={value.id} info={value}/>
+              </CardWrapper>
             )
           })
         }

@@ -4,6 +4,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
   .title{
     margin-top: 64px;
@@ -18,11 +19,14 @@ const Result = styled.div`
 `
 
 const Wrapper = styled.div`
-  /* border: 2px solid red; */
-  display: flex;
-  max-width: 1440px;
+  max-width: 1300px; 
   width: 100%;
-  flex-wrap: wrap; 
-  gap: 20px;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
 `
-export {Container,Result,Wrapper}
+
+const CardWrapper = styled.div``
+export {Container,Result,Wrapper,CardWrapper}

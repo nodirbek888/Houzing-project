@@ -3,7 +3,6 @@ import {Conatiner,Form, Icon,Advanced} from './style'
 import { Button, Input } from '../Generic'
 import Search from 'antd/lib/transfer/search'
 import { Popover } from 'antd'
-// import { Button, Popover } from 'antd'
 const Filter = () => {
   const AdvansedSerch = <Advanced>
     
@@ -37,7 +36,7 @@ const Filter = () => {
     <Conatiner>
       <Form>
         <Input pl={'42px'} placeholder='Enter an address, nighborhood, city, or ZIP code'><Icon.Home/></Input>
-        <Popover placement='bottomRight' content={AdvansedSerch} trigger={'click'}>
+        <Popover  placement='bottomRight' content={AdvansedSerch} trigger={'click'}>
         <Button width={'150px'} mr={20} ml={20} type={'secondary'}><Icon.Settings/>Advanced</Button>
         </Popover>
         <Button width={'190px'} type={'primary'} ><Icon.Search/> Search</Button>

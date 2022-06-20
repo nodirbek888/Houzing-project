@@ -10,6 +10,9 @@ import { ReactComponent as villa} from '../../../assets/icons/villa.svg'
 
 
 const Card = styled.div`
+		position: relative;
+		left: 55px;
+		/* border: 2px solid red; */
 	.card_text{
 		margin-top: 20px;
 		color: white;

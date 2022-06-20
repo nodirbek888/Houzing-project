@@ -24,10 +24,11 @@ const Form = styled.div`
     max-width: 1400px;
     /* padding: 0px 20px; */
     width: 100%;
-    height: 64px;
+    height: 50px;
     display: flex;
     background-color: #ffffff;
     align-items: center;
+    border: 1px solid redx;
 `
 const Advanced = styled.div`
     width: fit-content;
@@ -52,5 +53,4 @@ Advanced.Btn = styled.div`
     display: flex;
     justify-content: flex-end;
 `
-
 export {Conatiner,Form,Icon,Advanced} 
