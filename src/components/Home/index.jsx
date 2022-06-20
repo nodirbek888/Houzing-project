@@ -7,7 +7,7 @@ import Category  from './Category/index'
 import Vermont from './Vermont/index'
 import Properties from './Properties/index'
 import Testimonials from './Testimonials/index'
-
+import Footer from '../Footer/index'
 
 
 const Home = () => {
@@ -21,6 +21,7 @@ const Home = () => {
         <Vermont/>
         <Properties/>
         <Testimonials/>
+        <Footer/>
     </div>
   )
 }

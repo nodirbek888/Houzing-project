@@ -26,7 +26,9 @@ const Testimonials = () => {
   }
   const items = [
     <Card className='small-description' onDragStart={handleDragStart} role="presentation">
-        “ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “ 
+      <p className='text-center'>
+        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat  dolor repellendus. 
+      </p>
       <UserName>
         <Img src={User}/>
         <h1 className='sub-title'>Marvin McKinney</h1>
@@ -34,7 +36,9 @@ const Testimonials = () => {
       </UserName>
       </Card>,
     <Card className='small-description' onDragStart={handleDragStart} role="presentation">
-        “ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “ 
+      <p className='text-center'>
+      Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat  dolor repellendus.
+      </p>
       <UserName>
         <Img src={User}/>
         <h1 className='sub-title'>Marvin McKinney</h1>
@@ -42,7 +46,9 @@ const Testimonials = () => {
       </UserName>
       </Card>,
     <Card className='small-description' onDragStart={handleDragStart} role="presentation">
-        “ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “ 
+      <p className='text-center'>
+        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat  dolor repellendus.
+      </p>
       <UserName>
         <Img src={User}/>
         <h1 className='sub-title'>Marvin McKinney</h1>
@@ -50,7 +56,9 @@ const Testimonials = () => {
       </UserName>
       </Card>,
     <Card className='small-description' onDragStart={handleDragStart} role="presentation">
-        “ I believe in lifelong learning and Skola is a great place to learn from experts. I've learned a lot and recommend it to all my friends “ 
+        <p className='text-center'>
+          Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat  dolor repellendus.
+        </p>
       <UserName>
         <Img src={User}/>
         <h1 className='sub-title'>Marvin McKinney</h1>
