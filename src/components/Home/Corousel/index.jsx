@@ -1,7 +1,8 @@
 import React, {useRef} from 'react'
-import { Container, Img,Icon,Wrapper,Icons, Title, Skyepr,Details, Footer,Button} from './style'
+import { Container, Img,Icon,Wrapper,Icons, Title, Skyepr,Details, Footer,ImgWrapper} from './style'
 import home1 from '../../../assets/imgs/home1.png'
 import home2 from '../../../assets/imgs/home2.png'
+import Button from '../../Generic/Button'
 
 const Corousel = () => {
   const slider = useRef('click')
@@ -9,7 +10,10 @@ const Corousel = () => {
     <Wrapper>
     <Icon.Left onClick={()=> slider.current.prev()}/>
     <Icon.Right onClick={()=> slider.current.next()}/>
-    <Skyepr>
+    <Container autoplay  ref={slider}>
+    <ImgWrapper>
+        <Img src={home1}/>
+      <Skyepr>
       <Title>
         <h1 className='title des-title'>Skyper Pool Partment</h1>
         <p className='sub-title text-title'>112 Glenwood Ave Hyde Park, Boston, MA</p>
@@ -34,14 +38,23 @@ const Corousel = () => {
         </Details>
         <Footer>
           <h1 className='footer-title'>$5,250/mo</h1>
-          <Button>Read more</Button>
+          <Button width={'180px'}>Red more</Button>
         </Footer>
-    </Skyepr>
-    <Container autoplay  ref={slider}>
-      <Img src={home1}/>
-      <Img src={home2}/>
-      <Img src={home1}/>
-      <Img src={home2 }/>
+      </Skyepr>
+    </ImgWrapper>
+      
+      <ImgWrapper>
+        <Img src={home2}/>
+      </ImgWrapper>
+
+      <ImgWrapper>
+        <Img src={home1}/>
+      </ImgWrapper>
+
+      <ImgWrapper>
+        <Img src={home2 }/>
+      </ImgWrapper>
+
     </Container>
     </Wrapper>
   )

@@ -26,7 +26,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
   /* border: 2px solid red; */
   flex-wrap: wrap;
+  margin-bottom: 60px;
+`
+const FooterContainer = styled.div`
+  width: 100%;
+  margin-top: 100px;
 `
 
 const CardWrapper = styled.div``
-export {Container,Result,Wrapper,CardWrapper}
+export {Container,Result,Wrapper,CardWrapper,FooterContainer}

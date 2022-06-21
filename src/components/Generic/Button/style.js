@@ -20,6 +20,7 @@ const Container = styled.button`
 	align-items: center;
 	justify-content: center;
 	font-family: 'Montserrat';
+	cursor: pointer;
 	font-style: normal;
 	font-weight: 400;
 	border-radius: 2px;

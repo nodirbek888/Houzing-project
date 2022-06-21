@@ -3,7 +3,6 @@ import Card from '../../Card'
 import { Carousel, Container,Icon,Wrapper } from './style'
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-
 const Properties = () => {
   const ref = useRef('click')
   const handleDragStart = (e) => e.preventDefault();

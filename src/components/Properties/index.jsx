@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Filter from '../Filter'
 import Card from '../Card'
-import { Container,Result, Wrapper ,CardWrapper,} from "./style";
+import { Container,Result, Wrapper ,CardWrapper,FooterContainer} from "./style";
 import { useQuery } from "react-query";
+import Button from '../Generic/Button/index'
+import Footer from '../Footer'
 
 const {REACT_APP_BASE_URL:url} =process.env
 const Properties = () =>{
@@ -33,6 +35,12 @@ const Properties = () =>{
           })
         }
       </Wrapper>
+        <Button height={'44px'} mb={'100px'} width={'250px'} type={'primary'}>
+          Show more
+        </Button>
+        <FooterContainer>
+          <Footer/>
+        </FooterContainer>
     </Container>
   )
 }

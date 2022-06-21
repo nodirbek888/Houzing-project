@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const  Container = styled(Carousel)``
 
 const Skyepr = styled.div`
-  position: absolute;
+  position:absolute;
   top: 134px;
   right: 474px;
   left: 474px;
@@ -69,9 +69,11 @@ Icons.Bath = styled(bath)``
 Icons.Ruler = styled(ruler)``
 
 const Footer = styled.div`
-margin-top: 24px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   .footer-title{
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -79,24 +81,10 @@ margin-top: 24px;
     color: #ffffff;
   }
 `
-const Button = styled.div`
-  /* width: 180px;
-  height: 44px; */
-  padding: 12px 51px;
-  color: white;
-  margin-top: 48px;
-  cursor: pointer;
-  border: 1px solid #ffffff ;
-  background: transparent;
-  user-select: none;
-  &:active {
-		transform: scale(0.98);
-		opacity: 0.7;
-	}
-`
 
 const Img = styled.img`
   max-height: 571px;
+  width: 100%;
   filter: brightness(40%);
 `
 const Icon = styled.img``
@@ -151,6 +139,9 @@ Icon.Right = styled(RightArrow)`
     fill: #0d263b;
   }
 `
+const ImgWrapper = styled.div`
+  width: 100%;
+`
 
 
-export {Container,Title,Img,Icon,Wrapper,Skyepr,Details,Icons,Footer,Button}
+export {Container,Title,Img,Icon,Wrapper,Skyepr,Details,Icons,Footer,ImgWrapper}
