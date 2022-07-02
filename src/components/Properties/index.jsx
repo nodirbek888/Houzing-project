@@ -5,16 +5,18 @@ import { Container,Result, Wrapper ,CardWrapper,FooterContainer} from "./style";
 import { useQuery } from "react-query";
 import Button from '../Generic/Button/index'
 import Footer from '../Footer'
+import Err from '../../assets/imgs/Error.png'
+import { Img } from "../Card/style";
 
 const {REACT_APP_BASE_URL:url} =process.env
-const Properties = () =>{
+  const Properties = () =>{
   const [data, setData] = useState ([])
 
   useQuery('get started', ()=> {
     return fetch(`${url}v1/houses/list`).then(res=>res.json())
 },{
   onSuccess: (res) =>{
-    setData(res.data)
+    setData(res.data || [])
   }
 })
 

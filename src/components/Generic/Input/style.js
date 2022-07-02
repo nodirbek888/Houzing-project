@@ -12,6 +12,9 @@ const Container = styled.div`
     width: ${({width})=> (width ? width: '100%')};
     height: ${({height})=> height || '44px'};
     border: 1px solid #e6e9ec;
+    &:focus{
+        box-shadow: 0px 0px 9px 2px rgba(0, 97, 223, 0.2);
+    }
 `
 const Icon = styled.div`
     position: absolute;
